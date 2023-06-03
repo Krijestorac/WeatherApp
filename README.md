@@ -1,26 +1,26 @@
-# WheaterApp
+# WeatherApp - User Manual
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+Thank you for choosing the Weather Information Application! This user manual will guide you on how to effectively use the software to access weather information for any city in any state in the USA. The application is built using Angular and utilizes the US Weather by City API from Rapid API to retrieve current weather data for any state and their cities in USA.
 
-## Development server
+## How to use app?
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+App is very simple to use. In the home page you have two input placeholders for enetering:
+1. US state (e.g. "CA" - California)
+2. US city (e.g. "San Jose")
 
-## Code scaffolding
+After that, clicking on the "Search" button, you will be on the page with displayed information about your selected city.
+## User Interface
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Design
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Error hadnling
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
 
