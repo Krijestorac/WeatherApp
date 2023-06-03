@@ -1,0 +1,70 @@
+<div class="search">
+  <h1>Welcome to my Weather App</h1>
+  <form #form="ngForm" (ngSubmit)="onSubmit()">
+    <input type="text" placeholder="Search US state" name="state" [(ngModel)]="stateName">
+    <br>
+    <input type="text" placeholder="Search city" name="city" [(ngModel)]="cityName">
+    <br>
+    <button type="submit">Search</button>
+  </form>
+</div>
+
+<div class="container" *ngIf="weatherData">
+
+  <div class="upper-data">
+    <img src="../../../assets/img/winter.jpg" *ngIf="weatherData.TempC > '15'" alt="winter">
+    <img src="../../../assets/img/sommer.jpg" *ngIf="weatherData.TempC <= '15'" alt="sommer">
+    <div class="weather-data">
+      <div class="location">{{ weatherData.City }}</div>
+      <div class="temperature">{{ weatherData.TempC | number: '1.0-0'}}°C</div>
+    </div>
+  </div>
+  <div class="lower-data">
+    <div class="more-info-label">
+      More Information
+    </div>
+    <div class="more-info-container">
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../../../assets/img/cold.png" alt="cold">
+          <span>min</span>
+        </div>
+        <div class="info-block-value">
+          {{ weatherData.TempC | number: '1.0-0'}}°C
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../../../assets/img/hot.png" alt="hot">
+          <span>max</span>
+        </div>
+        <div class="info-block-value">
+          {{ weatherData.TempC | number: '1.0-0'}}°C
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../../../assets/img/humidity.png" alt="humidity">
+          <span>humidity</span>
+        </div>
+        <div class="info-block-value">
+          {{ weatherData.RelativeHumidity }}%
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../../../assets/img/wind.png" alt="wind">
+          <span>wind</span>
+        </div>
+        <div class="info-block-value">
+          {{ weatherData.WindMPH }} m/h
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
