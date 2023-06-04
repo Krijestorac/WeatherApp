@@ -9,13 +9,6 @@ App is very simple to use. In the home page you have two input placeholders for 
 2. US city (e.g. "San Jose")
 
 After that, clicking on the "Search" button, you will be on the page with displayed information about your selected city.
-## User Interface
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Design
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Error hadnling
 
